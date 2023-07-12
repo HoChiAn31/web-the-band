@@ -1,5 +1,4 @@
-var inforApi = 'http://localhost:3000/infor'
-
+var inforApi = 'http://localhost:3000/infor_client'
 
 function createInfor(data) {
     var option = {
@@ -13,7 +12,6 @@ function createInfor(data) {
         .then((reponse) => {
             reponse.json()
         })
-
 }
 handleCreateInfor();
 function handleCreateInfor() {
@@ -28,7 +26,7 @@ function handleCreateInfor() {
             message:messageInfor
         }
         createInfor(dataInfor)
-
+        getInfor()
     }
 }
 
